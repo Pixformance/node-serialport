@@ -46,7 +46,7 @@
     "bindings": "1.2.1",
     "debug": "^2.1.1",
     "nan": "~1.6.2",
-    "node-pre-gyp": "0.6.x",
+    "node-pre-gyp": "^0.5.19",
     "optimist": "~0.6.1",
     "sf": "0.1.7"
   },
@@ -72,7 +72,7 @@
     "serialportterm": "./bin/serialportTerminal.js"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "node-pre-gyp rebuild --runtime=node-webkit --target=0.8.6 --target_arch=ia32 --target_platform=win32 && node-pre-gyp build --runtime=node-webkit --target=0.8.6 --target_platform=darwin --target_arch=ia32",
     "test": "grunt --verbose"
   }
 }
