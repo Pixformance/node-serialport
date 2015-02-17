@@ -17,7 +17,7 @@
   "main": "./serialport",
   "repository": {
     "type": "git",
-    "url": "git://github.com/voodootikigod/node-serialport.git"
+    "url": "git://github.com/Pixformance/node-serialport.git"
   },
   "maintainers": [
     {
